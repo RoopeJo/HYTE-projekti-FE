@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+ /* Footer */
+
+footer{
+  background-color: lightgreen;
+  width: 100%;
+  height: 50px;
+  color: rgb(46, 46, 46);
+  text-align: center;
+  padding-top: 20px;
+  box-shadow: 0 -10px 20px rgba(0,0,0,0.4);
+}
+
+.clear {
+  clear: both;
+}
+
+/* Breakpointit */
+
+@media screen and (max-width: 900px) {
+  .card-inside {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-inside {
+    width: 100%;
+  }
+  nav {
+    height: 190px;
+  }
+  nav ul li {
+    float: none;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) { 
+  main { 
+    padding: 40px; 
+    width: 100%;
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  #gym-photo {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* NAVBAR */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgreen;
+  box-shadow: 10px 5px 5px 5px grey;
+}
+
+ul li {
+  float: left;
+  padding-left: 20px;
+}
+
+ul li a {
+  display: block;
+  color: rgb(46, 46, 46);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li a:hover {
+  background-color: white;
+}
+
+
+section {
+  margin-top: 100px;
+  text-align: center;
+}
+
+main {
+  background-color: lightgrey;
+  padding: 20px;
+  padding-bottom: 75px;
+  width: 100%;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  clear: both;
+  display: table;
+}
+
+/* Hero kuva*/
+#taustakuva {
+  max-width: 100%;
+  margin:auto;
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  background-image: url(/img/runner.jpeg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+/* GYM PHOTO  */
+#gym-photo { 
+  max-width: 1000px;
+  height: auto;
+  display: block; 
+  margin: 0 auto;
+}

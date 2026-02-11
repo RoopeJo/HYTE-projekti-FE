@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiivinen suunnittelu</title>
+    <style>
+        /* Mobiili ensin */
+
+        body {
+            background-color: rgb(52, 101, 53);
+        }
+        @media screen and (min-width: 600px) {
+            body {
+                background-color: blue;
+            }
+        }
+        @media screen and (min-width: 800px) {
+            body {
+                background-color: rgb(165, 7, 7);
+            }
+        }
+
+        @media screen and (min-width: 800px) and (max-width: 1000px) {
+            body {
+                font-size: 30px;
+            }
+        }
+        p {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #gym-photo {
+            width: 100%;
+            max-width: 800px;
+        }
+        @media screen and (min-width: 700px) {
+            #gym-photo {
+                display: block;
+                margin: auto;
+            }
+
+             #taustakuva {
+            background-image: url(/img/Test-image.jpeg);
+            background-position: center top;
+            }
+        }
+
+        #gym-photo2 {
+            height: 200px;
+            width: 50%;
+            object-fit: cover;
+        }
+        #taustakuva {
+            width: 50%;
+            height: 300px;
+            background-color: aqua;
+            background-image: url(/img/Test-image.jpeg);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h3>Otsikko</h3>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+
+    <h3>Normaali img kuva kuva ja mediasäännöt</h3>
+    <img id = "gym-photo" src="/img/Generic gym photo.jpg" alt="Generic gym photo"/>
+
+    <h3>Object fit</h3>
+    <img id = "gym-photo2" src="/img/Generic gym photo.jpg" alt="Generic gym photo"/>
+
+     <h3>Taustakuva</h3>
+    <div id="taustakuva"></div>
+    </p>
+</body>
+</html>

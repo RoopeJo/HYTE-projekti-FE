@@ -1,0 +1,94 @@
+/*********************/
+/* BMI osion tyylittely */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 75px;
+  background-color: lightgray;
+}
+
+.card > h2 {
+  margin-top: 15px;
+}
+
+.card p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.description {
+  color: black;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+}
+
+input[type='text'] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb (46, 46, 46);
+  background-color: lightgreen;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.btn:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+tbody {
+  background-color: #fff;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.lowBmi {
+  background-color: blue;
+}
+.normalBmi {
+  background-color: green;
+}
+.highBmi {
+  background-color: red;
+}
+
+/* Takasin nappula*/
+
+.back-btn {
+
+  display: inline-block;
+  background-color: lightgreen;
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-weight: 500;
+
+}
+
