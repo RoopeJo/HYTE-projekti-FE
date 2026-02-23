@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Positioning Items</title>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+      }
+
+    main {
+       height: 300px;
+       display: flex;
+       gap: 10px
+      }
+      
+      #heading {
+        background-color: aquamarine;
+        height: 50px;
+        width: 100%;
+        border: 1px solid black;
+        
+
+      }
+      #heading ul {
+       display: flex;
+       background-color: aqua;
+       list-style-type: none;
+       justify-content: center;
+      }
+
+      #heading li {
+        width: 70px;
+        background-color: bisque;
+        padding: 5px;
+        margin: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+      }
+      button{
+        height: 40px;
+        background-color: brown;
+        color: antiquewhite;
+      }
+      #left {
+        background-color: green;
+        border: 1px solid black;
+        flex: 1;
+        padding:  5px;
+      }
+      #right {
+        border: 1px solid black;
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+      }
+      #top {
+        background-color: aqua;
+        flex: 1;
+      }
+     #bottom {
+        background-color: blueviolet;
+        flex: 1;
+      }
+      #footer {
+        background-color: grey;
+        color: black;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      /* img */
+      img {
+      }
+
+      /* container */
+      .container {
+      }
+
+      /* relative and absolute positioning with blue */
+      #blue {
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+     <div id="heading">
+        <ul>
+            <li>Home</li>
+            <li>Cats</li>
+            <li>Dogs</li>
+        </ul>
+        <button>LOGIN</button>
+     </div>
+    <main>
+     <div id="left">Left</div>
+     <div id="right">Right</div>
+        <div id="top">TOP</div>
+        <div id="bottom">BOTTOM</div>
+    </main>
+    <div id="footer">
+        <p>Copyright</p></div>
+    </main>
+  </body>
+</html>
