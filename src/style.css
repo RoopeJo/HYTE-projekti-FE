@@ -13,8 +13,8 @@ footer{
   height: 50px;
   color: rgb(46, 46, 46);
   text-align: center;
-  padding-top: 20px;
-  box-shadow: 0 -10px 20px rgba(0,0,0,0.4);
+  padding-top: 18px;
+ 
 }
 
 .clear {
@@ -44,8 +44,9 @@ footer{
 
 @media screen and (max-width: 600px) { 
   main { 
-    padding: 40px; 
-    width: 100%;
+    padding: 20px; 
+    width: calc (100%-20px);
+    margin: 10px auto;
   } 
 }
 
@@ -69,10 +70,16 @@ ul {
   box-shadow: 10px 5px 5px 5px grey;
 }
 
+
 ul li {
   float: left;
   padding-left: 20px;
 }
+
+ul li:last-child {
+  float: right;
+}
+
 
 ul li a {
   display: block;
@@ -84,7 +91,7 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: white;
+  background-color: lightgrey;
 }
 
 
@@ -97,31 +104,55 @@ main {
   background-color: lightgrey;
   padding: 20px;
   padding-bottom: 75px;
-  width: 100%;
-  margin: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  width: calc(100% - 30px);
+  margin: 50px auto 50px;
   clear: both;
-  display: table;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
 }
 
-/* Hero kuva*/
-#taustakuva {
-  max-width: 100%;
-  margin:auto;
-  width: 100%;
-  height: 200px;
-  background-color: black;
-  background-image: url(/img/runner.jpeg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
 
 /* GYM PHOTO  */
 #gym-photo { 
   max-width: 1000px;
   height: auto;
   display: block; 
-  margin: 0 auto;
+  margin: 0 auto 25px;
+}
+
+main p {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 15px;         
+  line-height: 1.7;        
+  font-weight: 300;
+  text-align: center;         
+  color:black;             
+}
+
+.hero-title > h2 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.greeting {
+  background: #e8ffe8;
+  border: 1px solid #b6e7b6;
+  padding: 10px 20px;
+  margin: 20px auto 10px;
+  width: fit-content;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 18px;
+  border-radius: 12px;
+  color: #2b4a2b;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.greeting .username {
+  font-weight: 700;
+  color: #1d7e1d;
 }

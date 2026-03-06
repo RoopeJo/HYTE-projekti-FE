@@ -1,0 +1,138 @@
+
+/* NAVBAR */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgreen;
+  box-shadow: 10px 5px 5px 5px grey;
+}
+ul li {
+  float: left;
+  padding-left: 20px;
+}
+ul li:last-child {
+  float: right;
+}
+ul li a {
+  display: block;
+  color: rgb(46, 46, 46);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul li a:hover {
+  background-color: lightgrey;
+}
+
+/* MAIN */
+main {
+  background-color: lightgrey;
+  width: calc(100% - 40px);
+  margin: 100px auto 50px;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Hae-nappi */
+.get_entries,
+.create_entry {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(46, 46, 46);
+  font-weight: 600;
+}
+.get_entries:hover,
+.create_entry:hover {
+  background-color: lightgray;
+}
+
+/* Kortit */
+.diary-card-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  width: 260px;
+}
+
+/* Dialog */
+.diary_dialog {
+  padding: 20px;
+  border-radius: 6px;
+  border: none;
+  width: 340px;
+}
+.diary_dialog label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+.diary_dialog input,
+.diary_dialog textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+.diary_dialog button {
+  padding: 8px 16px;
+  background: lightgreen;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.diary_dialog button:hover {
+  background: white;
+}
+
+/* Footeri */
+footer {
+  background-color: lightgreen;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  color: #333;
+  margin-top: 165px;
+  box-shadow: 0 -8px 16px rgba(0,0,0,0.2);
+}
+
+.greeting {
+  background: #e8ffe8;
+  border: 1px solid #b6e7b6;
+  padding: 10px 20px;
+  margin: 20px auto 10px;
+  width: fit-content;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 18px;
+  border-radius: 12px;
+  color: #2b4a2b;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.greeting .username {
+  font-weight: 700;
+  color: #1d7e1d;
+}

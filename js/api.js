@@ -1,9 +1,9 @@
 import "../CSS/api.css"
-import {getItems, getItemById, deleteItemById, addItem} from './items.js';
+import {getItems, getItemById, deleteItemById, addItem, updateItemById, loadItemToPutForm} from './items.js';
 
-console.log("scripti starttaa2");
+console.log("scripti starttaa");
 
- function synchronousFunction() {
+ /* function synchronousFunction() {
       let number = 1;
       for(let i = 1; i < 100000; i++){
         number += i;
@@ -91,7 +91,7 @@ consoleLogItems();
 
 // consoleLogItems();
 
-getItems();
+getItems(); */
 
 // Hae nappula
 // Lisää kuuntelija joka suorittaa klikatessa getItems funktion
@@ -107,3 +107,9 @@ deleteBtn.addEventListener('click', deleteItemById);
 //Etsitään formi ei itse nappulaa ja tutkitaan SUBMIT eventtiä
 const addItemForm = document.querySelector('.add-item-form');
 addItemForm.addEventListener ('submit', addItem);
+
+const loadItemBtn = document.querySelector('.load-item');
+loadItemBtn.addEventListener('click', loadItemToPutForm);
+
+const putForm = document.querySelector('.put-item-form');
+putForm.addEventListener('submit', updateItemById);

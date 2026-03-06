@@ -1,3 +1,4 @@
+
 /**
  * Fetches JSON data from APIs
  *
@@ -12,9 +13,14 @@ const fetchData = async (url, options = {}) => {
 
     if (!response.ok) {
       const errorData = await response.json();
-      return { error: errorData.message || 'An error occurred' };
+      return { 
+        error: errorData?.message || 'An error occurred',
+        status: response.status 
+      };
     }
-    return await response.json(); // Return successful response data
+
+    return await response.json();
+
   } catch (error) {
     console.error('fetchData() error:', error.message);
     return { error: error.message };

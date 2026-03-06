@@ -198,7 +198,6 @@ const loadItemToPutForm = async () => {
 
 // Update item (PUT by id)
 
-
 const updateItemById = async (event) => {
   event.preventDefault();
 
@@ -246,4 +245,4 @@ const updateItemById = async (event) => {
 
     
 
-export { getItems, getItemById, deleteItemById, addItem };
+export { getItems, getItemById, deleteItemById, addItem, loadItemToPutForm, updateItemById };
