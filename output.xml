@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.1 on win32)" generated="2026-03-31T11:31:26.127366" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\test.robot">
+<test id="s1-t1" name="Create New Journal Entry" line="16">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-31T11:31:26.466452" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\roope\\OneDrive\\Tiedostot\\HYTE projekti FE\\HYTE\\browser\\traces\\temp\\840845d9-5ee8-443c-bc79-fc639bb55b26"}</msg>
+<msg time="2026-03-31T11:31:26.500803" level="INFO">Starting Browser process C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:51207</msg>
+<msg time="2026-03-31T11:31:27.942361" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\roope\\OneDrive\\Tiedostot\\HYTE projekti FE\\HYTE\\browser\\traces\\temp\\840845d9-5ee8-443c-bc79-fc639bb55b26"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-31T11:31:26.465726" elapsed="1.476943"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-31T11:31:28.337467" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173</msg>
+<msg time="2026-03-31T11:31:28.337586" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-31T11:31:27.943734" elapsed="0.394116"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-31T11:31:28.533270" level="INFO">Waited for Element with selector text=Päiväkirja at state visible</msg>
+<arg>text=Päiväkirja</arg>
+<arg>visible</arg>
+<arg>timeout=3s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-31T11:31:28.338371" elapsed="0.195398"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-31T11:31:28.535424" level="INFO">Clicks the element 'text=Päiväkirja'.</msg>
+<arg>text=Päiväkirja</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-31T11:31:28.534449" elapsed="0.209793"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-31T11:31:28.789685" level="INFO">Waited for Element with selector text=Luo uusi merkintä at state visible</msg>
+<arg>text=Luo uusi merkintä</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-31T11:31:28.744890" elapsed="0.044989"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-31T11:31:28.791235" level="INFO">Clicks the element 'text=Luo uusi merkintä'.</msg>
+<arg>text=Luo uusi merkintä</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-31T11:31:28.790345" elapsed="0.240158"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-31T11:31:29.042219" level="INFO">Waited for Element with selector text=Päivämäärä at state visible</msg>
+<arg>text=Päivämäärä</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-31T11:31:29.031072" elapsed="0.011482"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-31T11:31:29.044197" level="INFO">Fills the text '2026-04-01' in the given field.</msg>
+<arg>input[name="entry_date"]</arg>
+<arg>2026-04-01</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-31T11:31:29.043138" elapsed="0.030533"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-31T11:31:29.075500" level="INFO">Fills the text '4' in the given field.</msg>
+<arg>input[name="mood"]</arg>
+<arg>${MOOD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-31T11:31:29.074368" elapsed="0.026434"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-31T11:31:29.102402" level="INFO">Fills the text '72' in the given field.</msg>
+<arg>input[name="weight"]</arg>
+<arg>${WEIGHT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-31T11:31:29.101457" elapsed="0.022838"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-31T11:31:29.126235" level="INFO">Fills the text '7' in the given field.</msg>
+<arg>input[name="sleep_hours"]</arg>
+<arg>${SLEEP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-31T11:31:29.124889" elapsed="0.027956"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-31T11:31:29.155010" level="INFO">Fills the text '8000' in the given field.</msg>
+<arg>input[name="steps"]</arg>
+<arg>${STEPS}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-31T11:31:29.153768" elapsed="0.024912"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-31T11:31:29.180793" level="INFO">Fills the text '2200' in the given field.</msg>
+<arg>input[name="caloriesConsumed"]</arg>
+<arg>${EATEN}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-31T11:31:29.179149" elapsed="0.019736"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-31T11:31:29.200697" level="INFO">Fills the text '600' in the given field.</msg>
+<arg>input[name="caloriesBurned"]</arg>
+<arg>${BURNED}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-31T11:31:29.199506" elapsed="0.020580"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-31T11:31:29.222353" level="INFO">Fills the text 'Automaatio testimerkintä päiväkirjaan.' in the given field.</msg>
+<arg>textarea[name="notes"]</arg>
+<arg>${NOTE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-31T11:31:29.220906" elapsed="0.022615"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-31T11:31:29.245195" level="INFO">Clicks the element 'text=Tallenna'.</msg>
+<arg>text=Tallenna</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-31T11:31:29.244089" elapsed="0.121634"/>
+</kw>
+<msg time="2026-03-31T11:31:29.389636" level="INFO">Switching context to context=ea95ff37-3f12-44df-bdf9-111d3e2f692b in CURRENT</msg>
+<msg time="2026-03-31T11:31:29.404048" level="INFO">Successfully changed active context: context=ea95ff37-3f12-44df-bdf9-111d3e2f692b</msg>
+<msg time="2026-03-31T11:31:29.541457" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-03-31T11:31:26.464841" elapsed="2.901397"/>
+</test>
+<status status="PASS" start="2026-03-31T11:31:26.129419" elapsed="3.413494"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="1" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
