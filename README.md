@@ -24,7 +24,17 @@ Dropdown (select ja datalist)
 https://github.com/RoopeJo/HYTE-projekti-FE/blob/main/test/browser_demo.robot
 
 
-
 Tehtävä 4 
-
 https://github.com/RoopeJo/HYTE-projekti-FE/blob/main/test/diarytest.robot
+
+
+Tehtävä 7
+https://roopejo.github.io/HYTE-projekti-FE/
+https://github.com/RoopeJo/HYTE-projekti-FE/tree/main/docs
+
+
+Tehtävä 8
+https://roopejo.github.io/HYTE-projekti-FE/
+
+
+
