@@ -14,6 +14,8 @@ Kirjautumis testi
 
 https://github.com/RoopeJo/HYTE-projekti-FE/blob/main/test/browser_demo.robot
 
+Testi onnistui hyvin.
+
 
 Tehtävä 3
 
@@ -23,8 +25,24 @@ Dropdown (select ja datalist)
 
 https://github.com/RoopeJo/HYTE-projekti-FE/blob/main/test/browser_demo.robot
 
+Testisivun automaatiotesteistä sain toimimaan vain select ja dropdown testit. File input testi ei onnistunut, koska tiedosto muodossa oli jokin ongelma mikä esti testin suorittamisen.
 
 
 Tehtävä 4 
-
 https://github.com/RoopeJo/HYTE-projekti-FE/blob/main/test/diarytest.robot
+
+Oman web-sovelluksen päiväkirja testi sujui hyvin eikä ollut mitään ongelmia.
+
+
+Tehtävä 7
+https://roopejo.github.io/HYTE-projekti-FE/
+https://github.com/RoopeJo/HYTE-projekti-FE/tree/main/docs
+
+
+Tehtävä 8
+https://roopejo.github.io/HYTE-projekti-FE/
+
+Github.io sivuston luominen oli helppoa ja ohjeet olivat hyvät ja helpot seurata.
+
+
+
