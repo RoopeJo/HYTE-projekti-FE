@@ -1,0 +1,52 @@
+{"level":30,"time":"2026-04-21T11:32:57.136Z","pid":52892,"hostname":"Roope","msg":"Listening on 127.0.0.1:53687"}
+{"level":30,"time":"2026-04-21T11:32:57.303Z","pid":52892,"hostname":"Roope","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-21T11:32:57.696Z","pid":52892,"hostname":"Roope","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-21T11:32:57.696Z","pid":52892,"hostname":"Roope","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-21T11:32:57.696Z","pid":52892,"hostname":"Roope","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-21T11:32:57.703Z","pid":52892,"hostname":"Roope","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-21T11:32:57.703Z","pid":52892,"hostname":"Roope","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@1004784c68c43d298a6691801f5d7abb\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=faa5cc7a-9aa5-433d-aa24-37bcad82db15\"}"}
+{"level":30,"time":"2026-04-21T11:32:57.716Z","pid":52892,"hostname":"Roope","msg":"Setting default timeout for context context=076f5e19-272f-4688-a7f6-b6e7293ec70a to 10000"}
+{"level":30,"time":"2026-04-21T11:32:57.716Z","pid":52892,"hostname":"Roope","msg":"Changed active context: context=076f5e19-272f-4688-a7f6-b6e7293ec70a"}
+{"level":30,"time":"2026-04-21T11:32:57.899Z","pid":52892,"hostname":"Roope","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-21T11:32:57.899Z","pid":52892,"hostname":"Roope","msg":"Changed active page"}
+{"level":30,"time":"2026-04-21T11:33:00.257Z","pid":52892,"hostname":"Roope","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/
+Call log:
+[2m  - navigating to "http://localhost:5173/", waiting until "load"[22m
+
+    at newPage (C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\index.js:13017:18)
+    at async PlaywrightServer.newPage (C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\index.js:13635:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2026-04-21T11:33:00.266Z","pid":52892,"hostname":"Roope","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\index.js:11096:11)
+    at takeScreenshot (C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\index.js:11152:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\index.js:13635:34)
+    at Object.onReceiveHalfClose (C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-04-21T11:33:00.267Z","pid":52892,"hostname":"Roope","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2026-04-21T11:33:00.299Z","pid":52892,"hostname":"Roope","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-21T11:33:00.301Z","pid":52892,"hostname":"Roope","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-21T11:33:00.305Z","pid":52892,"hostname":"Roope","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-21T11:33:00.305Z","pid":52892,"hostname":"Roope","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-21T11:33:00.308Z","pid":52892,"hostname":"Roope","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-21T11:33:00.308Z","pid":52892,"hostname":"Roope","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-21T11:33:00.313Z","pid":52892,"hostname":"Roope","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-21T11:33:00.313Z","pid":52892,"hostname":"Roope","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-21T11:33:00.318Z","pid":52892,"hostname":"Roope","msg":"Changed active context: context=076f5e19-272f-4688-a7f6-b6e7293ec70a"}
+{"level":30,"time":"2026-04-21T11:33:00.321Z","pid":52892,"hostname":"Roope","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-04-21T11:33:00.363Z","pid":52892,"hostname":"Roope","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-04-21T11:33:00.371Z","pid":52892,"hostname":"Roope","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-21T11:33:00.371Z","pid":52892,"hostname":"Roope","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-21T11:33:00.522Z","pid":52892,"hostname":"Roope","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-04-21T11:33:00.822Z","pid":52892,"hostname":"Roope","msg":"End of node method closeAllBrowsers"}

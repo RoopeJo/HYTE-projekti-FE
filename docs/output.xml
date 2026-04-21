@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.13.1 on win32)" generated="2026-04-21T14:26:20.675580" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.13.1 on win32)" generated="2026-04-21T14:39:28.112249" rpa="false" schemaversion="5">
 <suite id="s1" name="Test" source="C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\test">
 <suite id="s1-s1" name="Browser Demo" source="C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\test\browser_demo.robot">
 <test id="s1-s1-t1" name="Test Web Form" line="6">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-04-21T14:26:21.205691" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\roope\\OneDrive\\Tiedostot\\HYTE projekti FE\\HYTE\\docs\\browser\\traces\\temp\\5dd957b0-3340-4dd3-85f9-44f81ee78b65"}</msg>
-<msg time="2026-04-21T14:26:21.335828" level="INFO">Starting Browser process C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:58472</msg>
-<msg time="2026-04-21T14:26:23.653236" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\roope\\OneDrive\\Tiedostot\\HYTE projekti FE\\HYTE\\docs\\browser\\traces\\temp\\5dd957b0-3340-4dd3-85f9-44f81ee78b65"}</msg>
+<msg time="2026-04-21T14:39:28.792623" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\roope\\OneDrive\\Tiedostot\\HYTE projekti FE\\HYTE\\docs\\browser\\traces\\temp\\24d10c2f-89e9-420c-a1ff-c4a77f3df41f"}</msg>
+<msg time="2026-04-21T14:39:28.920838" level="INFO">Starting Browser process C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:57770</msg>
+<msg time="2026-04-21T14:39:31.757043" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\roope\\OneDrive\\Tiedostot\\HYTE projekti FE\\HYTE\\docs\\browser\\traces\\temp\\24d10c2f-89e9-420c-a1ff-c4a77f3df41f"}</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-04-21T14:26:21.202983" elapsed="2.450567"/>
+<status status="PASS" start="2026-04-21T14:39:28.791549" elapsed="2.965983"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-04-21T14:26:24.410360" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
-<msg time="2026-04-21T14:26:24.410514" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-04-21T14:39:32.934530" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
+<msg time="2026-04-21T14:39:32.934694" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-04-21T14:26:23.654215" elapsed="0.757288"/>
+<status status="PASS" start="2026-04-21T14:39:31.758234" elapsed="1.177416"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2026-04-21T14:26:24.480613" level="INFO">Title: 'Web form'</msg>
+<msg time="2026-04-21T14:39:33.019147" level="INFO">Title: 'Web form'</msg>
 <arg>==</arg>
 <arg>Web form</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2026-04-21T14:26:24.412251" elapsed="0.068524"/>
+<status status="PASS" start="2026-04-21T14:39:32.936303" elapsed="0.083034"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2026-04-21T14:26:24.483005" level="INFO">Types the text 'somebody@example.com' in the given field.</msg>
+<msg time="2026-04-21T14:39:33.021618" level="INFO">Types the text 'somebody@example.com' in the given field.</msg>
 <arg>[name="my-text"]</arg>
 <arg>${Username}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-04-21T14:26:24.481364" elapsed="2.393014"/>
+<status status="PASS" start="2026-04-21T14:39:33.019863" elapsed="2.392774"/>
 </kw>
 <kw name="Type Secret" owner="Browser">
 <arg>[name="my-password"]</arg>
@@ -51,10 +51,10 @@
 <tag>Setter</tag>
 <doc>Types the given secret from ``variable_name`` into the text field
 found by ``selector``.</doc>
-<status status="PASS" start="2026-04-21T14:26:26.875169" elapsed="1.432850"/>
+<status status="PASS" start="2026-04-21T14:39:35.413449" elapsed="1.399667"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2026-04-21T14:26:28.309986" level="INFO">Types the text 'Hello, Robot Framework!
+<msg time="2026-04-21T14:39:36.814534" level="INFO">Types the text 'Hello, Robot Framework!
 How are you today?' in the given field.</msg>
 <arg>[name="my-textarea"]</arg>
 <arg>${Message}</arg>
@@ -62,32 +62,32 @@ How are you today?' in the given field.</msg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-04-21T14:26:28.308780" elapsed="4.916359"/>
+<status status="PASS" start="2026-04-21T14:39:36.813851" elapsed="4.713355"/>
 </kw>
 <kw name="Select Options By" owner="Browser">
-<msg time="2026-04-21T14:26:33.227006" level="INFO">Selects the option(s) Two by attribute SelectAttribute.label from element [name="my-select"].</msg>
+<msg time="2026-04-21T14:39:41.528457" level="INFO">Selects the option(s) Two by attribute SelectAttribute.label from element [name="my-select"].</msg>
 <arg>[name="my-select"]</arg>
 <arg>label</arg>
 <arg>Two</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2026-04-21T14:26:33.225872" elapsed="0.045773"/>
+<status status="PASS" start="2026-04-21T14:39:41.527677" elapsed="0.046849"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2026-04-21T14:26:33.273495" level="INFO">Types the text 'New York' in the given field.</msg>
+<msg time="2026-04-21T14:39:41.575764" level="INFO">Types the text 'New York' in the given field.</msg>
 <arg>[name="my-datalist"]</arg>
 <arg>New York</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-04-21T14:26:33.272239" elapsed="0.105042"/>
+<status status="PASS" start="2026-04-21T14:39:41.575176" elapsed="0.130534"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-04-21T14:26:33.378601" level="INFO">Clicks the element 'css=input[type="checkbox"]'.</msg>
-<msg time="2026-04-21T14:26:33.516877" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-21T14:26:33.517146" level="INFO">See also file:///C:/Users/roope/OneDrive/Tiedostot/HYTE%20projekti%20FE/HYTE/docs/playwright-log.txt for additional details.</msg>
-<msg time="2026-04-21T14:26:33.518148" level="FAIL">Error: locator.click: Error: strict mode violation: locator('input[type="checkbox"]') resolved to 2 elements:
+<msg time="2026-04-21T14:39:41.707488" level="INFO">Clicks the element 'css=input[type="checkbox"]'.</msg>
+<msg time="2026-04-21T14:39:41.854914" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-21T14:39:41.855631" level="INFO">See also file:///C:/Users/roope/OneDrive/Tiedostot/HYTE%20projekti%20FE/HYTE/docs/playwright-log-1776771568757424400.txt for additional details.</msg>
+<msg time="2026-04-21T14:39:41.857131" level="FAIL">Error: locator.click: Error: strict mode violation: locator('input[type="checkbox"]') resolved to 2 elements:
     1) &lt;input checked type="checkbox" name="my-check" id="my-check-1" class="form-check-input"/&gt; aka getByRole('checkbox', { name: 'Checked checkbox' })
     2) &lt;input type="checkbox" name="my-check" id="my-check-2" class="form-check-input"/&gt; aka getByRole('checkbox', { name: 'Default checkbox' })
 
@@ -98,7 +98,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="FAIL" start="2026-04-21T14:26:33.377726" elapsed="0.208523">Error: locator.click: Error: strict mode violation: locator('input[type="checkbox"]') resolved to 2 elements:
+<status status="FAIL" start="2026-04-21T14:39:41.706424" elapsed="0.166256">Error: locator.click: Error: strict mode violation: locator('input[type="checkbox"]') resolved to 2 elements:
     1) &lt;input checked type="checkbox" name="my-check" id="my-check-1" class="form-check-input"/&gt; aka getByRole('checkbox', { name: 'Checked checkbox' })
     2) &lt;input type="checkbox" name="my-check" id="my-check-2" class="form-check-input"/&gt; aka getByRole('checkbox', { name: 'Default checkbox' })
 
@@ -111,14 +111,14 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:33.587392" elapsed="0.000227"/>
+<status status="NOT RUN" start="2026-04-21T14:39:41.873775" elapsed="0.000375"/>
 </kw>
 <kw name="Click" owner="Browser">
 <arg>text=Submit</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:33.587950" elapsed="0.000236"/>
+<status status="NOT RUN" start="2026-04-21T14:39:41.874503" elapsed="0.000202"/>
 </kw>
 <kw name="Click With Options" owner="Browser">
 <arg>button</arg>
@@ -126,7 +126,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:33.588512" elapsed="0.000250"/>
+<status status="NOT RUN" start="2026-04-21T14:39:41.875334" elapsed="0.000190"/>
 </kw>
 <kw name="Get Text" owner="Browser">
 <arg>id=message</arg>
@@ -136,9 +136,9 @@ Call log:
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:33.589085" elapsed="0.000271"/>
+<status status="NOT RUN" start="2026-04-21T14:39:41.875869" elapsed="0.000202"/>
 </kw>
-<status status="FAIL" start="2026-04-21T14:26:21.201038" elapsed="12.389026">Error: locator.click: Error: strict mode violation: locator('input[type="checkbox"]') resolved to 2 elements:
+<status status="FAIL" start="2026-04-21T14:39:28.790686" elapsed="13.086823">Error: locator.click: Error: strict mode violation: locator('input[type="checkbox"]') resolved to 2 elements:
     1) &lt;input checked type="checkbox" name="my-check" id="my-check-1" class="form-check-input"/&gt; aka getByRole('checkbox', { name: 'Checked checkbox' })
     2) &lt;input type="checkbox" name="my-check" id="my-check-2" class="form-check-input"/&gt; aka getByRole('checkbox', { name: 'Default checkbox' })
 
@@ -146,26 +146,26 @@ Call log:
   - waiting for locator('input[type="checkbox"]')
 </status>
 </test>
-<status status="FAIL" start="2026-04-21T14:26:20.709226" elapsed="12.885470"/>
+<status status="FAIL" start="2026-04-21T14:39:28.154815" elapsed="13.728563"/>
 </suite>
 <suite id="s1-s2" name="Diarytest" source="C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\test\diarytest.robot">
 <test id="s1-s2-t1" name="Create New Journal Entry" line="16">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-04-21T14:26:33.662640" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\roope\\OneDrive\\Tiedostot\\HYTE projekti FE\\HYTE\\docs\\browser\\traces\\temp\\9f3e0045-c431-44a4-b912-f90009e2554e"}</msg>
-<msg time="2026-04-21T14:26:33.697633" level="INFO">Starting Browser process C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:50063</msg>
-<msg time="2026-04-21T14:26:35.006543" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\roope\\OneDrive\\Tiedostot\\HYTE projekti FE\\HYTE\\docs\\browser\\traces\\temp\\9f3e0045-c431-44a4-b912-f90009e2554e"}</msg>
+<msg time="2026-04-21T14:39:41.970353" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\roope\\OneDrive\\Tiedostot\\HYTE projekti FE\\HYTE\\docs\\browser\\traces\\temp\\28987d2d-7a47-4f84-a136-0d46e8f032ee"}</msg>
+<msg time="2026-04-21T14:39:42.027176" level="INFO">Starting Browser process C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:61342</msg>
+<msg time="2026-04-21T14:39:43.947965" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\roope\\OneDrive\\Tiedostot\\HYTE projekti FE\\HYTE\\docs\\browser\\traces\\temp\\28987d2d-7a47-4f84-a136-0d46e8f032ee"}</msg>
 <arg>chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-04-21T14:26:33.661990" elapsed="1.344781"/>
+<status status="PASS" start="2026-04-21T14:39:41.969462" elapsed="1.978859"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-04-21T14:26:37.737242" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+<msg time="2026-04-21T14:39:46.586204" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
 Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2026-04-21T14:26:37.737422" level="INFO">See also file:///C:/Users/roope/OneDrive/Tiedostot/HYTE%20projekti%20FE/HYTE/docs/playwright-log-1776770793603934000.txt for additional details.</msg>
-<msg time="2026-04-21T14:26:37.737574" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/
+<msg time="2026-04-21T14:39:46.586430" level="INFO">See also file:///C:/Users/roope/OneDrive/Tiedostot/HYTE%20projekti%20FE/HYTE/docs/playwright-log-1776771581898111400.txt for additional details.</msg>
+<msg time="2026-04-21T14:39:46.586694" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/
 Call log:
   - navigating to "http://localhost:5173/", waiting until "load"
 </msg>
@@ -173,7 +173,7 @@ Call log:
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="FAIL" start="2026-04-21T14:26:35.007572" elapsed="2.742370">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/
+<status status="FAIL" start="2026-04-21T14:39:43.949206" elapsed="2.645995">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/
 Call log:
   - navigating to "http://localhost:5173/", waiting until "load"
 </status>
@@ -185,14 +185,14 @@ Call log:
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.750821" elapsed="0.000480"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.595800" elapsed="0.000334"/>
 </kw>
 <kw name="Click" owner="Browser">
 <arg>text=Päiväkirja</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.752205" elapsed="0.000408"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.597026" elapsed="0.000476"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
 <arg>text=Luo uusi merkintä</arg>
@@ -201,14 +201,14 @@ Call log:
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.753142" elapsed="0.000513"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.597837" elapsed="0.000258"/>
 </kw>
 <kw name="Click" owner="Browser">
 <arg>text=Luo uusi merkintä</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.754151" elapsed="0.000280"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.598438" elapsed="0.000311"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
 <arg>text=Päivämäärä</arg>
@@ -217,7 +217,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.754849" elapsed="0.000266"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.599079" elapsed="0.000317"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>input[name="entry_date"]</arg>
@@ -225,7 +225,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.755420" elapsed="0.000182"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.599926" elapsed="0.000320"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>input[name="mood"]</arg>
@@ -233,7 +233,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.755908" elapsed="0.000193"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.600590" elapsed="0.000286"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>input[name="weight"]</arg>
@@ -241,7 +241,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.756747" elapsed="0.000229"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.601478" elapsed="0.000311"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>input[name="sleep_hours"]</arg>
@@ -249,7 +249,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.757271" elapsed="0.000275"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.602183" elapsed="0.000332"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>input[name="steps"]</arg>
@@ -257,7 +257,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.758130" elapsed="0.000319"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.602893" elapsed="0.000295"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>input[name="caloriesConsumed"]</arg>
@@ -265,7 +265,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.758848" elapsed="0.000221"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.603553" elapsed="0.000301"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>input[name="caloriesBurned"]</arg>
@@ -273,7 +273,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.759514" elapsed="0.000286"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.604201" elapsed="0.000318"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>textarea[name="notes"]</arg>
@@ -281,26 +281,26 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.760253" elapsed="0.000285"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.604824" elapsed="0.000288"/>
 </kw>
 <kw name="Click" owner="Browser">
 <arg>text=Tallenna</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-04-21T14:26:37.760856" elapsed="0.000296"/>
+<status status="NOT RUN" start="2026-04-21T14:39:46.605383" elapsed="0.000269"/>
 </kw>
-<msg time="2026-04-21T14:26:37.786595" level="INFO">Switching context to context=eafa2382-3382-4148-a7af-a1d4f187d1bd in CURRENT</msg>
-<msg time="2026-04-21T14:26:37.792525" level="INFO">Successfully changed active context: context=eafa2382-3382-4148-a7af-a1d4f187d1bd</msg>
-<msg time="2026-04-21T14:26:37.955289" level="INFO">Successfully closed Context</msg>
-<status status="FAIL" start="2026-04-21T14:26:33.661261" elapsed="4.100412">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/
+<msg time="2026-04-21T14:39:46.632490" level="INFO">Switching context to context=b97c3b14-daf0-458b-ac28-030fac790a43 in CURRENT</msg>
+<msg time="2026-04-21T14:39:46.642030" level="INFO">Successfully changed active context: context=b97c3b14-daf0-458b-ac28-030fac790a43</msg>
+<msg time="2026-04-21T14:39:46.674960" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-04-21T14:39:41.968279" elapsed="4.637741">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/
 Call log:
   - navigating to "http://localhost:5173/", waiting until "load"
 </status>
 </test>
-<status status="FAIL" start="2026-04-21T14:26:33.599097" elapsed="4.357870"/>
+<status status="FAIL" start="2026-04-21T14:39:41.888390" elapsed="4.792016"/>
 </suite>
-<status status="FAIL" start="2026-04-21T14:26:20.676971" elapsed="17.287413"/>
+<status status="FAIL" start="2026-04-21T14:39:28.113710" elapsed="18.575293"/>
 </suite>
 <statistics>
 <total>
