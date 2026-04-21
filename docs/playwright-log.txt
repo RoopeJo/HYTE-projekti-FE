@@ -1,0 +1,48 @@
+{"level":30,"time":"2026-04-21T11:26:22.341Z","pid":33620,"hostname":"Roope","msg":"Listening on 127.0.0.1:58472"}
+{"level":30,"time":"2026-04-21T11:26:22.607Z","pid":33620,"hostname":"Roope","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-21T11:26:23.648Z","pid":33620,"hostname":"Roope","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-21T11:26:23.651Z","pid":33620,"hostname":"Roope","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-21T11:26:23.651Z","pid":33620,"hostname":"Roope","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-21T11:26:23.656Z","pid":33620,"hostname":"Roope","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-21T11:26:23.657Z","pid":33620,"hostname":"Roope","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@a41abcc93fad45c3759f465d011c642a\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=e5edb26f-15dd-45db-a8c6-09c26bf91a5f\"}"}
+{"level":30,"time":"2026-04-21T11:26:23.707Z","pid":33620,"hostname":"Roope","msg":"Setting default timeout for context context=b283e665-36cb-412a-a8b2-b61b668a0860 to 10000"}
+{"level":30,"time":"2026-04-21T11:26:23.707Z","pid":33620,"hostname":"Roope","msg":"Changed active context: context=b283e665-36cb-412a-a8b2-b61b668a0860"}
+{"level":30,"time":"2026-04-21T11:26:24.091Z","pid":33620,"hostname":"Roope","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-21T11:26:24.091Z","pid":33620,"hostname":"Roope","msg":"Changed active page"}
+{"level":30,"time":"2026-04-21T11:26:24.407Z","pid":33620,"hostname":"Roope","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-21T11:26:24.485Z","pid":33620,"hostname":"Roope","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-21T11:26:24.485Z","pid":33620,"hostname":"Roope","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
+{"level":30,"time":"2026-04-21T11:26:26.872Z","pid":33620,"hostname":"Roope","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-21T11:26:26.876Z","pid":33620,"hostname":"Roope","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-21T11:26:26.876Z","pid":33620,"hostname":"Roope","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
+{"level":30,"time":"2026-04-21T11:26:28.305Z","pid":33620,"hostname":"Roope","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-21T11:26:28.311Z","pid":33620,"hostname":"Roope","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-21T11:26:28.311Z","pid":33620,"hostname":"Roope","msg":"Strict mode is enabled, find Locator with [name=\"my-textarea\"] in page."}
+{"level":30,"time":"2026-04-21T11:26:33.223Z","pid":33620,"hostname":"Roope","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-21T11:26:33.228Z","pid":33620,"hostname":"Roope","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-04-21T11:26:33.229Z","pid":33620,"hostname":"Roope","msg":"Strict mode is enabled, find Locator with [name=\"my-select\"] in page."}
+{"level":30,"time":"2026-04-21T11:26:33.269Z","pid":33620,"hostname":"Roope","msg":"Option entries: 4"}
+{"level":30,"time":"2026-04-21T11:26:33.269Z","pid":33620,"hostname":"Roope","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-04-21T11:26:33.269Z","pid":33620,"hostname":"Roope","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-04-21T11:26:33.275Z","pid":33620,"hostname":"Roope","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-21T11:26:33.275Z","pid":33620,"hostname":"Roope","msg":"Strict mode is enabled, find Locator with [name=\"my-datalist\"] in page."}
+{"level":30,"time":"2026-04-21T11:26:33.374Z","pid":33620,"hostname":"Roope","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-21T11:26:33.379Z","pid":33620,"hostname":"Roope","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-21T11:26:33.380Z","pid":33620,"hostname":"Roope","msg":"Strict mode is enabled, find Locator with css=input[type=\"checkbox\"] in page."}
+{"level":30,"time":"2026-04-21T11:26:33.389Z","pid":33620,"hostname":"Roope","msg":"Error of node method  click"}
+================= Original suppressed error =================
+locator.click: Error: strict mode violation: locator('input[type="checkbox"]') resolved to 2 elements:
+    1) <input checked type="checkbox" name="my-check" id="my-check-1" class="form-check-input"/> aka getByRole('checkbox', { name: 'Checked checkbox' })
+    2) <input type="checkbox" name="my-check" id="my-check-2" class="form-check-input"/> aka getByRole('checkbox', { name: 'Default checkbox' })
+
+Call log:
+[2m  - waiting for locator('input[type="checkbox"]')[22m
+
+    at internalClick (C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\index.js:12341:19)
+    at async click (C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\index.js:12322:18)
+    at async PlaywrightServer.click (C:\Users\roope\OneDrive\Tiedostot\HYTE projekti FE\HYTE\.venv\Lib\site-packages\Browser\wrapper\index.js:13635:28)
+=============================================================
+{"level":30,"time":"2026-04-21T11:26:33.398Z","pid":33620,"hostname":"Roope","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-04-21T11:26:33.399Z","pid":33620,"hostname":"Roope","Take screenshot with options: ":{"path":"C:\\Users\\roope\\OneDrive\\Tiedostot\\HYTE projekti FE\\HYTE\\docs\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-04-21T11:26:33.514Z","pid":33620,"hostname":"Roope","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-04-21T11:26:42.019Z","pid":33620,"hostname":"Roope","msg":"Removed page=c0718946-4487-4d67-b5df-89eec69f85ba from context=b283e665-36cb-412a-a8b2-b61b668a0860 page stack"}
